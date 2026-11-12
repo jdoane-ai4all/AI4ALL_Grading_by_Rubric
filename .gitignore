@@ -1,0 +1,17 @@
+# Student artifacts, labels and model outputs are PRIVATE and never committed.
+data/
+!app/data/
+app/data/*
+!app/data/precomputed.json
+runs/
+outputs/
+registry/split_registry.json
+*.pdf
+*.zip
+*.jpg
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.env
+
+.streamlit/secrets.toml

@@ -1,0 +1,117 @@
+{
+  "name": "Human-like calibration table, revision 1 (development fit)",
+  "method": "Phase 1 B2: median instructor grade per raw grade, monotone pooling (PAVA), unseen raw grades filled with the mean development shift, then forced monotone",
+  "fitted_on": "46 development decks, 10-run modes of the human-like prompt; no test labels",
+  "table_outputs_for_raw_1_to_5": {
+    "Project Description": [
+      1,
+      2,
+      4,
+      4,
+      5
+    ],
+    "Algorithm": [
+      1,
+      2,
+      3,
+      5,
+      5
+    ],
+    "Essential Question": [
+      3,
+      3,
+      4,
+      4,
+      5
+    ],
+    "Next Steps": [
+      1,
+      2,
+      4,
+      4,
+      5
+    ],
+    "Citations": [
+      1,
+      3,
+      3,
+      4,
+      5
+    ]
+  },
+  "development_decks_per_raw_grade_1_to_5": {
+    "Project Description": [
+      0,
+      0,
+      3,
+      19,
+      24
+    ],
+    "Algorithm": [
+      0,
+      0,
+      3,
+      15,
+      28
+    ],
+    "Essential Question": [
+      2,
+      1,
+      9,
+      19,
+      15
+    ],
+    "Next Steps": [
+      0,
+      0,
+      6,
+      32,
+      8
+    ],
+    "Citations": [
+      0,
+      2,
+      10,
+      12,
+      22
+    ]
+  },
+  "replaces (as delivered, fitting procedure undocumented)": {
+    "Project Description": [
+      1,
+      2,
+      4,
+      5,
+      5
+    ],
+    "Algorithm": [
+      1,
+      3,
+      4,
+      5,
+      5
+    ],
+    "Essential Question": [
+      1,
+      3,
+      4,
+      4,
+      5
+    ],
+    "Next Steps": [
+      1,
+      2,
+      4,
+      4,
+      5
+    ],
+    "Citations": [
+      1,
+      3,
+      3,
+      5,
+      5
+    ]
+  },
+  "strict_table_refit_equals_phase1_registered_table": true
+}

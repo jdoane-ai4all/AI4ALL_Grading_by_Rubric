@@ -1,0 +1,176 @@
+{
+  "study_id": "ignite-final-presentation-ai-scoring-v1",
+  "status": "PRE-REGISTERED DESIGN - no model results exist yet",
+  "criteria_order": [
+    "project_description",
+    "data_visualization",
+    "algorithm",
+    "essential_question",
+    "next_steps",
+    "citations"
+  ],
+  "label_source": {
+    "sheet": "Data",
+    "note": "Column letters follow the Data tab layout documented in docs/PROTOCOL.md section 3. Next Steps precedes Citations intentionally.",
+    "columns": {
+      "project_id": "A",
+      "title": "B",
+      "project_description": "C",
+      "data_visualization": "D",
+      "algorithm": "E",
+      "essential_question": "F",
+      "next_steps": "G",
+      "citations": "H",
+      "total": "I",
+      "label_status": "J",
+      "cohort": "P",
+      "duplicate_group": "S",
+      "artifact_equivalence": "AH"
+    },
+    "never_load_columns": [
+      "AJ",
+      "AK"
+    ],
+    "never_load_tabs": [
+      "Student_Grade_Lookup",
+      "SU25-26"
+    ]
+  },
+  "split": {
+    "seed": 20261102,
+    "unit": "duplicate_group",
+    "development_fraction": 0.35,
+    "strata": [
+      "cohort",
+      "total_band"
+    ],
+    "total_bands": {
+      "below_nomination_threshold": [
+        6,
+        23
+      ],
+      "nomination_band": [
+        24,
+        28
+      ],
+      "near_ceiling": [
+        29,
+        30
+      ]
+    },
+    "note": "24/30 is the Student Symposium nomination threshold stated in the rubric document, so it is the decision-relevant cut point."
+  },
+  "scoring": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "thinking": "adaptive (cannot be disabled on this model; summarized thinking is NOT requested or stored)",
+    "max_tokens": 16000,
+    "server_side_fallback": false,
+    "server_side_fallback_rationale": "A silent switch to a different model would confound the study. Refusals are logged as failures and counted in denominators.",
+    "conditions": {
+      "C1_basic_separate": {
+        "prompt": "basic",
+        "input": "pdf",
+        "organisation": "separate"
+      },
+      "C2_evidence_separate": {
+        "prompt": "evidence",
+        "input": "pdf",
+        "organisation": "separate"
+      },
+      "C3_evidence_text_only": {
+        "prompt": "evidence",
+        "input": "text",
+        "organisation": "separate"
+      },
+      "C4_evidence_joint": {
+        "prompt": "evidence",
+        "input": "pdf",
+        "organisation": "joint"
+      },
+      "F1_evidence_joint_text": {
+        "prompt": "evidence",
+        "input": "text",
+        "organisation": "joint",
+        "executor": "claude-code-subagent"
+      },
+      "F2_evidence_separate_text": {
+        "prompt": "evidence",
+        "input": "text",
+        "organisation": "separate",
+        "executor": "claude-code-subagent"
+      }
+    },
+    "primary_contrast": [
+      "C2_evidence_separate",
+      "C1_basic_separate"
+    ],
+    "secondary_contrasts": [
+      [
+        "C2_evidence_separate",
+        "C3_evidence_text_only"
+      ],
+      [
+        "C2_evidence_separate",
+        "C4_evidence_joint"
+      ]
+    ],
+    "replicates": {
+      "primary_condition": 3,
+      "other_conditions": 1
+    },
+    "max_retries_invalid_output": 2,
+    "free_plan_primary": "F1_evidence_joint_text",
+    "free_plan_contrasts": [
+      [
+        "F2_evidence_separate_text",
+        "F1_evidence_joint_text"
+      ]
+    ]
+  },
+  "metrics": {
+    "primary": "per-criterion mean absolute error (MAE) vs historical score, locked test set, project-group cluster bootstrap 95% CI",
+    "kappa_weights": "quadratic (primary); linear reported as sensitivity",
+    "severe_discrepancy": "absolute criterion difference >= 2",
+    "decision_threshold_total": 24,
+    "bootstrap_reps": 5000,
+    "tolerances_for_supporting_review": {
+      "criterion_mae_max": 0.5,
+      "criterion_within_one_min": 0.9,
+      "severe_discrepancy_rate_max": 0.05,
+      "threshold_classification_agreement_min": 0.85,
+      "note": "Decision tolerances are pre-specified judgement calls for the 'AI supports, human decides' use. They must be reviewed with a program lead before the test set is unlocked and must not be changed afterwards."
+    }
+  },
+  "review_policy": {
+    "route_to_human_if": [
+      "abstention or invalid output on any criterion",
+      "run-to-run disagreement on any criterion (primary condition replicates)",
+      "predicted total within +/-2 of the nomination threshold (22-26)",
+      "any predicted criterion score <= 3 (rare in this population, highest-risk region)",
+      "extraction or redaction issue flagged by scorer"
+    ],
+    "thresholds_tuned_on": "development set only"
+  },
+  "label_source_safe_index": {
+    "note": "PI-prepared 'Safe Data' export (Data tab A, C:I, P, S, U only). Header row 1.",
+    "columns": {
+      "project_id": "A",
+      "project_description": "B",
+      "data_visualization": "C",
+      "algorithm": "D",
+      "essential_question": "E",
+      "next_steps": "F",
+      "citations": "G",
+      "total": "H",
+      "cohort": "I",
+      "duplicate_group": "J",
+      "text_link": "K",
+      "artifact_equivalence": "L",
+      "title": "L",
+      "label_status": "L"
+    },
+    "never_load_columns": [],
+    "never_load_tabs": []
+  }
+}

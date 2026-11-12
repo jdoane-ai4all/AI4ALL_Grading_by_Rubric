@@ -1,0 +1,1 @@
+The split registry is generated locally by `cli split` and is git-ignored because it lists project IDs alongside strata derived from labels. Commit only its sha256 (printed by the command) to docs/DECISION_LOG.md.

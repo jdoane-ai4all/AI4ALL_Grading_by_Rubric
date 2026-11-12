@@ -1,0 +1,9 @@
+streamlit==1.66.1
+anthropic>=2.3
+numpy>=1.26
+pypdfium2>=4.30
+requests>=2.31
+google-auth>=2.30
+spacy>=3.8,<3.9
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+opencv-python-headless>=4.10

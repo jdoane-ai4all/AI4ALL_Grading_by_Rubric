@@ -1,0 +1,571 @@
+{
+  "source_rows": 990,
+  "projects": 198,
+  "internal_checks": {
+    "mode_ties": 0,
+    "mode_mismatches": 0,
+    "calibrated_runs_not_matching_table": {},
+    "strict_table_equals_phase1_B2_fit": true
+  },
+  "agreement": {
+    "development": {
+      "Strict rubric": {
+        "n": 230,
+        "exact": 0.43043478260869567,
+        "mae": 0.7956521739130434,
+        "within1": 0.8260869565217391,
+        "mean_diff": -0.5434782608695652,
+        "over_rate": 0.10434782608695652,
+        "under_rate": 0.4652173913043478,
+        "qwk": 0.329354125153105
+      },
+      "Strict rubric + calibration": {
+        "n": 230,
+        "exact": 0.5652173913043478,
+        "mae": 0.5043478260869565,
+        "within1": 0.9391304347826087,
+        "mean_diff": 0.02608695652173913,
+        "over_rate": 0.21304347826086956,
+        "under_rate": 0.2217391304347826,
+        "qwk": 0.4354734530422425
+      },
+      "Human-like": {
+        "n": 230,
+        "exact": 0.5347826086956522,
+        "mae": 0.5826086956521739,
+        "within1": 0.9,
+        "mean_diff": -0.12173913043478261,
+        "over_rate": 0.1782608695652174,
+        "under_rate": 0.28695652173913044,
+        "qwk": 0.38412852969815003
+      },
+      "Human-like + calibration": {
+        "n": 230,
+        "exact": 0.5826086956521739,
+        "mae": 0.5217391304347826,
+        "within1": 0.9130434782608695,
+        "mean_diff": 0.1826086956521739,
+        "over_rate": 0.26956521739130435,
+        "under_rate": 0.14782608695652175,
+        "qwk": 0.3810474117077891
+      },
+      "Always 5 (baseline)": {
+        "n": 230,
+        "exact": 0.5565217391304348,
+        "mae": 0.6434782608695652,
+        "within1": 0.8521739130434782,
+        "mean_diff": 0.6434782608695652,
+        "over_rate": 0.4434782608695652,
+        "under_rate": 0.0,
+        "qwk": 0.0
+      }
+    },
+    "test": {
+      "Strict rubric": {
+        "n": 419,
+        "exact": 0.4152744630071599,
+        "mae": 0.8758949880668258,
+        "within1": 0.7708830548926014,
+        "mean_diff": -0.6133651551312649,
+        "over_rate": 0.1026252983293556,
+        "under_rate": 0.4821002386634845,
+        "qwk": 0.28990318257036685
+      },
+      "Strict rubric + calibration": {
+        "n": 419,
+        "exact": 0.5250596658711217,
+        "mae": 0.5966587112171837,
+        "within1": 0.8973747016706444,
+        "mean_diff": -0.014319809069212411,
+        "over_rate": 0.2052505966587112,
+        "under_rate": 0.26968973747016706,
+        "qwk": 0.2692159025558353
+      },
+      "Human-like": {
+        "n": 419,
+        "exact": 0.47494033412887826,
+        "mae": 0.684964200477327,
+        "within1": 0.863961813842482,
+        "mean_diff": -0.20763723150357996,
+        "over_rate": 0.1766109785202864,
+        "under_rate": 0.34844868735083534,
+        "qwk": 0.2873465689417529
+      },
+      "Human-like + calibration": {
+        "n": 419,
+        "exact": 0.5704057279236276,
+        "mae": 0.5536992840095465,
+        "within1": 0.8926014319809069,
+        "mean_diff": 0.13842482100238662,
+        "over_rate": 0.2458233890214797,
+        "under_rate": 0.18377088305489261,
+        "qwk": 0.2997103651298608
+      },
+      "Always 5 (baseline)": {
+        "n": 419,
+        "exact": 0.5727923627684964,
+        "mae": 0.6276849642004774,
+        "within1": 0.8615751789976134,
+        "mean_diff": 0.6276849642004774,
+        "over_rate": 0.42720763723150357,
+        "under_rate": 0.0,
+        "qwk": 0.0
+      }
+    }
+  },
+  "test_label_distribution": {
+    "1": 9,
+    "2": 8,
+    "3": 41,
+    "4": 121,
+    "5": 240
+  },
+  "test_by_criterion_exact": {
+    "Project Description": {
+      "Strict rubric": 0.4939759036144578,
+      "Strict rubric + calibration": 0.5301204819277109,
+      "Human-like": 0.5180722891566265,
+      "Human-like + calibration": 0.6506024096385542
+    },
+    "Algorithm": {
+      "Strict rubric": 0.32142857142857145,
+      "Strict rubric + calibration": 0.5595238095238095,
+      "Human-like": 0.4880952380952381,
+      "Human-like + calibration": 0.5952380952380952
+    },
+    "Essential Question": {
+      "Strict rubric": 0.14285714285714285,
+      "Strict rubric + calibration": 0.4642857142857143,
+      "Human-like": 0.2976190476190476,
+      "Human-like + calibration": 0.4166666666666667
+    },
+    "Next Steps": {
+      "Strict rubric": 0.5238095238095238,
+      "Strict rubric + calibration": 0.5238095238095238,
+      "Human-like": 0.5238095238095238,
+      "Human-like + calibration": 0.5238095238095238
+    },
+    "Citations": {
+      "Strict rubric": 0.5952380952380952,
+      "Strict rubric + calibration": 0.5476190476190477,
+      "Human-like": 0.5476190476190477,
+      "Human-like + calibration": 0.6666666666666666
+    }
+  },
+  "instructor_1_to_3": {
+    "Strict rubric": {
+      "n": 58,
+      "exact": 0.5344827586206896,
+      "mean_diff": 0.5862068965517241
+    },
+    "Strict rubric + calibration": {
+      "n": 58,
+      "exact": 0.13793103448275862,
+      "mean_diff": 1.4827586206896552
+    },
+    "Human-like": {
+      "n": 58,
+      "exact": 0.22413793103448276,
+      "mean_diff": 1.2241379310344827
+    },
+    "Human-like + calibration": {
+      "n": 58,
+      "exact": 0.13793103448275862,
+      "mean_diff": 1.5862068965517242
+    }
+  },
+  "instructor_5": {
+    "Strict rubric": {
+      "n": 240,
+      "exact": 0.38333333333333336,
+      "mean_diff": -0.9875
+    },
+    "Strict rubric + calibration": {
+      "n": 240,
+      "exact": 0.5458333333333333,
+      "mean_diff": -0.5041666666666667
+    },
+    "Human-like": {
+      "n": 240,
+      "exact": 0.49166666666666664,
+      "mean_diff": -0.6666666666666666
+    },
+    "Human-like + calibration": {
+      "n": 240,
+      "exact": 0.6958333333333333,
+      "mean_diff": -0.3458333333333333
+    }
+  },
+  "totals": {
+    "projects": 83,
+    "human_mean": 21.83132530120482,
+    "human_perfect_25": 17,
+    "Strict rubric": {
+      "mean_pred": 18.746987951807228,
+      "mae": 3.4698795180722892,
+      "rmse": 4.296257828075639,
+      "exact": 10,
+      "pearson": 0.4374441489972636,
+      "mean_diff": -3.0843373493975905
+    },
+    "Strict rubric + calibration": {
+      "mean_pred": 21.759036144578314,
+      "mae": 2.1927710843373496,
+      "rmse": 2.8284271247461903,
+      "exact": 15,
+      "pearson": 0.30263150846007253,
+      "mean_diff": -0.07228915662650602
+    },
+    "Human-like": {
+      "mean_pred": 20.783132530120483,
+      "mae": 2.397590361445783,
+      "rmse": 3.0438561465620966,
+      "exact": 11,
+      "pearson": 0.35805727098148943,
+      "mean_diff": -1.0481927710843373
+    },
+    "Human-like + calibration": {
+      "mean_pred": 22.53012048192771,
+      "mae": 2.0240963855421685,
+      "rmse": 2.706529365223898,
+      "exact": 18,
+      "pearson": 0.3657036893372258,
+      "mean_diff": 0.6987951807228916
+    },
+    "Always 5 (baseline)": {
+      "mae": 3.1686746987951806,
+      "exact": 17
+    }
+  },
+  "repeatability_all_990": {
+    "Strict rubric": {
+      "unanimous": 892,
+      "unanimous_rate": 0.901010101010101,
+      "pairwise": 0.969786756453423,
+      "modal_share": 0.983030303030303
+    },
+    "Strict rubric + calibration": {
+      "unanimous": 930,
+      "unanimous_rate": 0.9393939393939394,
+      "pairwise": 0.981705948372615,
+      "modal_share": 0.9897979797979798
+    },
+    "Human-like": {
+      "unanimous": 859,
+      "unanimous_rate": 0.8676767676767677,
+      "pairwise": 0.9663299663299663,
+      "modal_share": 0.981919191919192
+    },
+    "Human-like + calibration": {
+      "unanimous": 929,
+      "unanimous_rate": 0.9383838383838384,
+      "pairwise": 0.9846240179573513,
+      "modal_share": 0.9918181818181818
+    }
+  },
+  "three_in_a_row_stopping_rule_strict": {
+    "matches_10_run_mode": 990,
+    "of": 990,
+    "mean_calls": 3.109090909090909
+  },
+  "bootstrap_95ci_test": {
+    "B-A exact": [
+      0.059523809523809534,
+      0.15751789976133646
+    ],
+    "B-A mae": [
+      0.19285714285714284,
+      0.36038186157517893
+    ],
+    "D-C exact": [
+      0.04556354916067151,
+      0.14319809069212414
+    ],
+    "D-C mae": [
+      0.06459330143540676,
+      0.2004773269689737
+    ],
+    "D-B exact": [
+      0.004761904761904745,
+      0.08571428571428574
+    ],
+    "D-B mae": [
+      -0.0023809523809523725,
+      0.09047619047619049
+    ]
+  },
+  "reconciliation_with_phase1": {
+    "labels_vs_phase1": {
+      "compared": 649,
+      "different": 0,
+      "projects_with_differences": 0,
+      "phase1_has_valid_project_199_project_description": true,
+      "phase2_project_199_project_description": "missing"
+    },
+    "split_matches_registry": true,
+    "phase2_strict_mode_vs_phase1_single_run": {
+      "compared": 981,
+      "phase1_abstentions_excluded": 9,
+      "identical": 962,
+      "identical_rate": 0.9806320081549439,
+      "mean_phase2_minus_phase1": 0.010193679918450561,
+      "identical_rate_by_criterion": {
+        "Project Description": 0.9695431472081218,
+        "Algorithm": 0.9797979797979798,
+        "Essential Question": 0.9796954314720813,
+        "Next Steps": 0.9847715736040609,
+        "Citations": 0.9895833333333334
+      }
+    }
+  },
+  "refit_on_development": {
+    "rubric": {
+      "Project Description": {
+        "refit": [
+          1,
+          2,
+          4,
+          4,
+          5
+        ],
+        "reported": [
+          1,
+          2,
+          4,
+          4,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          0,
+          18,
+          4,
+          24
+        ]
+      },
+      "Algorithm": {
+        "refit": [
+          2,
+          4,
+          4,
+          5,
+          5
+        ],
+        "reported": [
+          2,
+          4,
+          4,
+          5,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          3,
+          10,
+          22,
+          11
+        ]
+      },
+      "Essential Question": {
+        "refit": [
+          2,
+          4,
+          4,
+          5,
+          5
+        ],
+        "reported": [
+          2,
+          4,
+          4,
+          5,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          3,
+          1,
+          23,
+          19,
+          0
+        ]
+      },
+      "Next Steps": {
+        "refit": [
+          4,
+          4,
+          4,
+          4,
+          5
+        ],
+        "reported": [
+          4,
+          4,
+          4,
+          4,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          4,
+          2,
+          6,
+          26,
+          8
+        ]
+      },
+      "Citations": {
+        "refit": [
+          3,
+          3,
+          3,
+          4,
+          5
+        ],
+        "reported": [
+          3,
+          3,
+          3,
+          4,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          2,
+          2,
+          8,
+          12,
+          22
+        ]
+      }
+    },
+    "human": {
+      "Project Description": {
+        "refit": [
+          1,
+          2,
+          4,
+          4,
+          5
+        ],
+        "reported": [
+          1,
+          2,
+          4,
+          5,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          0,
+          3,
+          19,
+          24
+        ]
+      },
+      "Algorithm": {
+        "refit": [
+          1,
+          2,
+          3,
+          5,
+          5
+        ],
+        "reported": [
+          1,
+          3,
+          4,
+          5,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          0,
+          3,
+          15,
+          28
+        ]
+      },
+      "Essential Question": {
+        "refit": [
+          3,
+          3,
+          4,
+          4,
+          5
+        ],
+        "reported": [
+          1,
+          3,
+          4,
+          4,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          2,
+          1,
+          9,
+          19,
+          15
+        ]
+      },
+      "Next Steps": {
+        "refit": [
+          1,
+          2,
+          4,
+          4,
+          5
+        ],
+        "reported": [
+          1,
+          2,
+          4,
+          4,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          0,
+          6,
+          32,
+          8
+        ]
+      },
+      "Citations": {
+        "refit": [
+          1,
+          3,
+          3,
+          4,
+          5
+        ],
+        "reported": [
+          1,
+          3,
+          3,
+          5,
+          5
+        ],
+        "dev_pairs_by_raw_score": [
+          0,
+          2,
+          10,
+          12,
+          22
+        ]
+      }
+    }
+  },
+  "sensitivity_D_with_dev_refit_table": {
+    "test": {
+      "n": 419,
+      "exact": 0.513126491646778,
+      "mae": 0.6085918854415274,
+      "within1": 0.8973747016706444,
+      "mean_diff": -0.016706443914081145,
+      "over_rate": 0.20763723150357996,
+      "under_rate": 0.27923627684964203,
+      "qwk": 0.2647781349579572
+    },
+    "test_instructor_1_to_3_exact": 0.15517241379310345
+  },
+  "max_abs_difference_vs_reported_pooled_metrics": 1.1102230246251565e-16
+}

@@ -1,0 +1,95 @@
+{
+  "rubric_id": "ai4all_ignite_final_presentation",
+  "source": "AI4ALL Ignite Rubrics (uploaded .docx), table 'RUBRIC / Final Presentation'",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels": {
+      "5": "Exceeds Requirements",
+      "4": "At Times Exceeds Requirements",
+      "3": "Meets Requirement",
+      "2": "Beginning to Meet Requirements",
+      "1": "Needs Major Improvement"
+    }
+  },
+  "total": {
+    "min": 6,
+    "max": 30,
+    "rule": "sum of six equally weighted criteria"
+  },
+  "essential_question_wordings": {
+    "rubric_document": "How can the process of creating AI/ML solutions amplify or mitigate bias in the case our group is using?",
+    "program_statement": "How can the development processes of responsible AI/ML solutions address and mitigate the technology's negative impacts while strengthening its positive effects?"
+  },
+  "administrative_rules_not_applied_by_scorer": [
+    "No submission, missing names, or lack of citations are graded as a zero (source document). Names are redacted in study artifacts, so this rule is NOT applied by the AI scorer."
+  ],
+  "criteria": [
+    {
+      "key": "project_description",
+      "name": "Project Description",
+      "levels": {
+        "5": "Provides a high-level description of the project and what was being solved or investigated. Comments on how the project changed over the program. Describes at least one challenge faced and solutions implemented.",
+        "4": "Provides a high-level description of the project and what was being solved or investigated. Comments on how the project changed over the program.",
+        "3": "Provides a high-level description of the project and what was being solved or investigated. Does not mention if/how the project changed over the program.",
+        "2": "Describes the project but it is unclear as to what was being solved or investigated.",
+        "1": "No project description is included."
+      }
+    },
+    {
+      "key": "data_visualization",
+      "name": "Data Visualization",
+      "levels": {
+        "5": "Includes at least three data visualizations that help the viewer understand the data or challenge being addressed.",
+        "4": "Includes at least two data visualizations that help the viewer understand the data or challenge being addressed.",
+        "3": "Includes at least one data visualization that helps the viewer understand the data or challenge being addressed.",
+        "2": "Includes at least one data visualization but it is unclear as to what is being communicated.",
+        "1": "No data visualizations were included."
+      }
+    },
+    {
+      "key": "algorithm",
+      "name": "Algorithm",
+      "levels": {
+        "5": "Provides a strong explanation of algorithm(s) used including the type (supervised, unsupervised, etc.), inputs, and outputs. Conveys a solid understanding of the algorithm and its data. Includes pros & cons of selection.",
+        "4": "Provides definition(s) of the algorithm(s) used including the type (supervised, unsupervised, etc.), inputs, and outputs. Goes beyond mere recall of definitions and begins to describe the relationship between the algorithm and data.",
+        "3": "Provides simple definition(s) of the algorithm(s) used including the type (supervised, unsupervised, etc.), inputs, and outputs. A deep understanding of the algorithm and its relationship to data is not conveyed.",
+        "2": "Provides simple definition(s) of the algorithm(s) used including the type used (supervised, unsupervised, etc.), inputs, and outputs. Explanation includes minor errors.",
+        "1": "Does not provide a definition(s) of the algorithm(s). OR Explanation includes major errors."
+      }
+    },
+    {
+      "key": "essential_question",
+      "name": "Essential Question",
+      "levels": {
+        "5": "Provides an answer to the essential question grounded in research, discussion, and reflection. Takes into account the complexity of AI’s impact. The answer goes well beyond the content covered in the program.",
+        "4": "Provides an answer to the essential question grounded in research, discussion, and reflection. Takes into account the complexity of AI’s impact.",
+        "3": "Provides an answer to the essential question. Begins to take into account the complexity of AI’s impact.",
+        "2": "Provides an answer to the essential question, however, the answer only emphasizes the positive or the negative aspects of AI/ML.",
+        "1": "Does not provide an answer to the essential question."
+      }
+    },
+    {
+      "key": "next_steps",
+      "name": "Next Steps",
+      "levels": {
+        "5": "The next steps are measurable, well-thought-out, and include deadlines.",
+        "4": "The next steps are included and are well-thought-out.",
+        "3": "The next steps are included but may seem impractical.",
+        "2": "The next steps are included but extremely vague. E.g. “I will learn more.”",
+        "1": "The next steps are not included."
+      }
+    },
+    {
+      "key": "citations",
+      "name": "Citations",
+      "levels": {
+        "5": "At least 7 citations related to the topic of interest. Source of data included.",
+        "4": "5 to 6 citations related to the topic of interest. Source of data included.",
+        "3": "3 to 4 citations related to the topic of interest. Source of data included.",
+        "2": "2 citations related to the topic of interest. Source of data included.",
+        "1": "Less than 2 citations related to the topic. OR Source of data not included."
+      }
+    }
+  ]
+}

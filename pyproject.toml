@@ -1,0 +1,18 @@
+[project]
+name = "rubric-scoring-validation"
+version = "0.1.0"
+description = "Validation study of LLM rubric scoring for student AI/ML project presentations"
+requires-python = ">=3.10"
+dependencies = ["anthropic>=2.3", "numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "scikit-learn>=1.4", "matplotlib>=3.8", "reportlab>=4"]
+app = ["spacy>=3.8,<3.9", "opencv-python-headless>=4.10", "pypdfium2>=4.30", "pillow>=10"]
+fetch = ["google-auth>=2.30", "requests>=2.31"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

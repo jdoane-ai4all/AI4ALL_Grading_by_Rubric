@@ -1,0 +1,3 @@
+rating_id,rater_code,project_id,criterion,score_1_to_5_or_ABSTAIN,abstention_reason,evidence_pages,brief_rationale,limiting_factors,minutes_spent,date_utc
+# Instructions: rate from the redacted PDF only, using config/rubric_final_presentation.json and the procedures in docs/PROTOCOL.md section 6.3.
+# Do not view historical scores, AI scores or other raters' scores. Do not attempt to identify students. Save before any adjudication discussion.
